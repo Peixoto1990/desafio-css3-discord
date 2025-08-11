@@ -1,0 +1,221 @@
+@import url("./reset.css");
+
+.header {
+    background-image: url("../images/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding: 4rem 1.5rem;
+}
+
+.header-content {
+    display: flex;
+    gap: 1.5rem;
+    flex-flow: row wrap;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content h1, .header-content p {
+    color: #FFFFFF;
+    flex: 1 1 100%;
+}
+
+.header-content h1, .header span {
+    font-family: var(--titulos-destaque);
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.header-content span {
+    display: block;
+}
+
+.container-header-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-flow: row wrap;
+    padding: 1rem 0;
+    flex: 1 1 100%;
+}
+
+.header-buttons {
+    flex: 1 1 100%;
+    border-radius: 28px;
+    padding: 1rem 0;
+    font-size: 1rem;
+}
+
+.header-buttons:first-child {
+    background-color: #FFFFFF;
+}
+
+.header-buttons:nth-child(2) {
+    background-color: #23272A;
+    color: #FFFFFF;
+}
+
+main {
+    padding: 3rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-list, .main-technology {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+    flex: 1 1 100%;
+}
+
+.main-technology {
+    background-color: #F6F6F6;
+    padding: 3rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-list li {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+    flex: 1 1 100%;
+    padding: 3rem 1.5rem;
+}
+
+.main-list li:nth-child(2) {
+    background-color: #F6F6F6;
+}
+
+.main-list-image, .main-list-content-container, .main-technology-image, .main-technology-title, .main-technology-content {
+    flex: 1 1 100%;
+}
+
+.main-list-content-container {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.main-list-image, .main-technology-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vw;
+    max-height: 400px;
+}
+
+.main-list-image-01 {
+    background-image: url("../images/section1.png");
+}
+
+.main-list-image-02 {
+    background-image: url("../images/section2.png");
+}
+
+.main-list-image-03 {
+    background-image: url("../images/section3.png");
+}
+
+.main-list-title {
+    color: #23272A;
+    font-weight: 800;
+    font-size: 1.6rem;
+}
+
+.main-list-content, .main-technology-content {
+    color: #23272A;
+}
+
+.main-technology-image {
+    background-image: url("../images/section4.png");
+}
+
+.main-technology-title {
+    font-family: var(--titulos-destaque);
+    font-weight: 400;
+    color: #23272A;
+    font-size: 2rem;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #23272A;
+}
+
+footer a {
+    background-image: url("../images/logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 140px;
+    width: 140px;
+    display: block;
+}
+
+/* Responsivo */
+
+@media screen and (min-width: 850px) {
+    .header-content h1, .header-content span {
+        font-size: 3.2rem;
+    }
+
+    .header-content h1, .header-content p {
+        text-align: center;
+    }
+
+    .container-header-buttons {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-buttons {
+        flex: 0 1 40%;   
+    }
+
+    .main-list li {
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-list-content-container {
+        flex: 0 1 25%;
+    }
+
+    .main-list-image {
+        flex: 0 1 50%;
+    }
+
+    .main-list-image-02 {
+        order: 1;
+    }
+
+    .main-technology-title, .main-list-title {
+        font-size: 2.1rem;
+    }
+
+    .main-technology-title, .main-technology-content {
+        text-align: center;
+        flex: 0 1 60%;
+    }
+
+    .main-technology-image {
+        max-height: 500px;
+        flex: 0 1 70%;
+    }
+
+    footer a {
+        width: 190px;
+        height: 190px;
+    }
+}
